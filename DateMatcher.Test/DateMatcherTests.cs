@@ -20,6 +20,7 @@ namespace DateMatcher.Test
         [InlineData("2020-01-01","2020-02-02", DateMatchLevel.YearOnly)]
         [InlineData("2020-01-01","2020-01-02", DateMatchLevel.YearAndMonth)]
         [InlineData("2020-01-01","2020-01-01", DateMatchLevel.Exact)]
+        [InlineData("2021-01-01","2020-01-01", DateMatchLevel.NoMatch)]
         public void DateMatcher_Match_ReturnsCorrectLevel(string strDate1, string strDate2, DateMatchLevel expected)
         {
             var date1 = DateTime.Parse(strDate1);
