@@ -1,6 +1,6 @@
 using System;
 
-namespace DateMatcher.Interfaces
+namespace DateMatcher
 {
     public interface IDateMatcher
     {

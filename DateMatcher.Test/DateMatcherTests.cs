@@ -1,12 +1,21 @@
 using System;
+using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
 namespace DateMatcher.Test
 {
     public class DateMatcherTests
     {
-        private IDateMatcher _sut = new DateMatcher();
-        
+        private readonly IDateMatcher _sut;
+
+        public DateMatcherTests()
+        {
+            ServiceCollection servicesCollection = new ServiceCollection();
+            servicesCollection.AddDateMatcher();
+            var serviceProvider = servicesCollection.BuildServiceProvider();
+            _sut = serviceProvider.GetRequiredService<IDateMatcher>();
+
+        }
         [Theory]
         [InlineData("2020-01-01","2020-02-02", DateMatchLevel.YearOnly)]
         [InlineData("2020-01-01","2020-01-02", DateMatchLevel.YearAndMonth)]

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateMatcher", "DateMatcher\DateMatcher.csproj", "{9A4989A0-9291-4BE0-A8BE-14F630D9DF61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateMatcher.Test", "DateMatcher.Test\DateMatcher.Test.csproj", "{101E4A19-B9C7-4325-B545-B5BD5E877DD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{9A4989A0-9291-4BE0-A8BE-14F630D9DF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A4989A0-9291-4BE0-A8BE-14F630D9DF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A4989A0-9291-4BE0-A8BE-14F630D9DF61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101E4A19-B9C7-4325-B545-B5BD5E877DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101E4A19-B9C7-4325-B545-B5BD5E877DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101E4A19-B9C7-4325-B545-B5BD5E877DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101E4A19-B9C7-4325-B545-B5BD5E877DD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
